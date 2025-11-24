@@ -1,0 +1,37 @@
+/* Basic Styling - Easy to understand */
+
+/* Background + font */
+body {
+    background-color: #e8f0fe;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    color: #222;
+}
+
+/* Top Right Picture */
+.profile-img {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 2px solid #0057b8;
+}
+
+/* Headings color change */
+h1, h2, h3 {
+    color: #0057b8;
+}
+
+/* Buttons simple style */
+.btn {
+    background-color: #0057b8;
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+}
+.btn:hover {
+    background-color: #003f87;
+}
