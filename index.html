@@ -13,15 +13,12 @@
 
     <!-- Heading -->
     <h1>Welcome to My Portfolio</h1>
-    <p> Bachelor of Computer Science | Web Developer</p>
+    <p>Bachelor of Computer Science | Web Developer</p>
     <hr><br>
 
     <!-- About Me -->
     <h2>About Me</h2>
-    <p>
-        I am learning web development and I am confident that I will improve day by day.
-        
-    </p>
+    <p>I am learning web development and I am confident that I will improve day by day 😊</p>
     <br>
 
     <!-- Education -->
@@ -41,59 +38,41 @@
     <a class="btn" href="/project.html">Projects Page</a><br><br>
     <hr><br>
 
-    <!-- Contact -->
- <!-- <h3>Contact</h3>
-    <p>Email: sheikhsoban31@gmail.com</p> -->
-  <!---  <hr>
-<h2>Contact Me</h2>
-<p>If you have any queries, feel free to contact me 👇</p>
+    <!-- Social Links Section -->
+    <h2>Connect With Me</h2>
+    <p>You can also find me on:</p>
 
-<form action="mailto:yourEmail@gmail.com" method="POST" enctype="text/plain">
-    <label for="name">Your Name:</label><br>
-    <input type="text" id="name" name="Name" required><br><br>
+    <div class="social-links">
+        <a href="https://www.linkedin.com/in/soban-faisal-8658aa399/" target="_blank">🔗 My LinkedIn</a><br><br>
+        <a href="https://github.com/sobanfaisal31" target="_blank">💻 My GitHub</a>
+    </div>
 
-    <label for="email">Your Email:</label><br>
-    <input type="email" id="email" name="Email" required><br><br>
+    <!-- Contact Form Section -->
+    <hr>
+    <h2>Contact Me</h2>
+    <p>If you have any queries, feel free to contact me 👇</p>
 
-    <label for="message">Your Message:</label><br>
-    <textarea id="message" name="Message" rows="4" required></textarea><br><br>
+    <form id="contactForm">
+        <label>Your Name:</label><br>
+        <input type="text" id="name" required><br><br>
 
-    <button type="submit">Send Message</button>
-</form>
+        <label>Your Email:</label><br>
+        <input type="email" id="email" required><br><br>
 
-<p style="margin-top: 20px;">Thank you for visiting my portfolio! 🌟</p> -->
-<!-- Contact Section -->
-<hr>
-<h2>Contact Me</h2>
-<p>If you have any queries, feel free to contact me 👇</p>
+        <label>Your Message:</label><br>
+        <textarea id="message" rows="4" required></textarea><br><br>
 
-<form id="contactForm">
-    <label>Your Name:</label><br>
-    <input type="text" id="name" required><br><br>
+        <button type="submit">Send Message</button>
+    </form>
 
-    <label>Your Email:</label><br>
-    <input type="email" id="email" required><br><br>
-
-    <label>Your Message:</label><br>
-    <textarea id="message" rows="4" required></textarea><br><br>
-
-    <button type="submit">Send Message</button>
-</form>
-
-<p id="thanksMessage" style="display:none; margin-top: 20px; font-weight:bold;">
-    Thank you! Your message has been sent. 🌟
-</p>
-
-<!-- Simple JavaScript -->
-<script>
-document.getElementById("contactForm").addEventListener("submit", function(event) {
-    event.preventDefault(); // stops from refreshing
-    alert("Message Sent Successfully!"); // popup message
-    document.getElementById("thanksMessage").style.display = "block"; // show thank you text
-    document.getElementById("contactForm").reset(); // clear form
-});
-</script>
-
+    <!-- JavaScript Alert System -->
+    <script>
+        document.getElementById("contactForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Message Sent Successfully!");
+            document.getElementById("contactForm").reset();
+        });
+    </script>
 
 </body>
 </html>
