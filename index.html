@@ -42,8 +42,58 @@
     <hr><br>
 
     <!-- Contact -->
-    <h3>Contact</h3>
-    <p>Email: sheikhsoban31@gmail.com</p>
+ <!-- <h3>Contact</h3>
+    <p>Email: sheikhsoban31@gmail.com</p> -->
+  <!---  <hr>
+<h2>Contact Me</h2>
+<p>If you have any queries, feel free to contact me 👇</p>
+
+<form action="mailto:yourEmail@gmail.com" method="POST" enctype="text/plain">
+    <label for="name">Your Name:</label><br>
+    <input type="text" id="name" name="Name" required><br><br>
+
+    <label for="email">Your Email:</label><br>
+    <input type="email" id="email" name="Email" required><br><br>
+
+    <label for="message">Your Message:</label><br>
+    <textarea id="message" name="Message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<p style="margin-top: 20px;">Thank you for visiting my portfolio! 🌟</p> -->
+<!-- Contact Section -->
+<hr>
+<h2>Contact Me</h2>
+<p>If you have any queries, feel free to contact me 👇</p>
+
+<form id="contactForm">
+    <label>Your Name:</label><br>
+    <input type="text" id="name" required><br><br>
+
+    <label>Your Email:</label><br>
+    <input type="email" id="email" required><br><br>
+
+    <label>Your Message:</label><br>
+    <textarea id="message" rows="4" required></textarea><br><br>
+
+    <button type="submit">Send Message</button>
+</form>
+
+<p id="thanksMessage" style="display:none; margin-top: 20px; font-weight:bold;">
+    Thank you! Your message has been sent. 🌟
+</p>
+
+<!-- Simple JavaScript -->
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault(); // stops from refreshing
+    alert("Message Sent Successfully!"); // popup message
+    document.getElementById("thanksMessage").style.display = "block"; // show thank you text
+    document.getElementById("contactForm").reset(); // clear form
+});
+</script>
+
 
 </body>
 </html>
